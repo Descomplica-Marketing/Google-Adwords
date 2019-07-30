@@ -10,9 +10,8 @@ report_query = (adwords.ReportQueryBuilder()
                 .During('YESTERDAY')
                 .Build())
 
-client_ids = (
-    '544-463-1325', '581-972-9913', '961-537-2652', '261-376-2623', '645-101-8338', '626-926-9193', '875-081-6111',
-    '216-595-8325', '433-261-3982')
+# Create a list with your client ids 
+client_ids = ()
 
 report = get_report_df(client_ids, report_query)
 
